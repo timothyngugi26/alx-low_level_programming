@@ -1,8 +1,2 @@
-#!bin/bash/
-#include <stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-gcc $CFILE -o cisfun
+#!bin/bash
+export CFILE=2-main.c ; ./2-assembler
