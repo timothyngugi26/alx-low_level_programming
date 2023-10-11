@@ -1,23 +1,28 @@
-#include <stdio.h>
+#include "main.h"
 
-void printAlphabet() {
-    char alphabet = 'a';
-    int i;
+/**
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
+ */
+void print_alphabet_x10(void)
+{
+	char ch;
+	int i;
 
-    for (i = 0; i < 10; i++) {
-        int j;
-        for (j = 0; j < 26; j++) {
-            putchar(alphabet);
-            putchar(' ');
-            alphabet++;
-        }
-        putchar('\n');
-        alphabet  = 'a';  // Reset alphabet to 'a' for the next line
-    }
+	i = 0;
+
+	while (i < 10)
+	{
+		ch = 'a';
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		_putchar('\n');
+		i++;
+	}
 }
 
-int main() {
-    printAlphabet();
-    return 0;
-}
+
 
