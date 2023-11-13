@@ -1,4 +1,6 @@
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 /**
  * print_all - print any argument provided to funstion
  * @format: the argument specifier
@@ -41,7 +43,7 @@ void print_all(const char * const format, ...)
 				check_stat = 1;
 				break;
 		}
-		if (format[i + 1] != 'o' && check_stat == 0)
+		if (format[i] != '\o' && check_stat == 0)
 			printf(", ");
 		i++;
 	}
